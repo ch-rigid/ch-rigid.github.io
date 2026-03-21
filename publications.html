@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering of Data Analysis Pipelines - Publications</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="content-section">
+            <div class="container">
+                <h2 class="section-header" id="publications">Publications</h2>
+
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="research-legend" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                            <span><span class="research-dot data-science"></span> Practical Data Science</span>
+                            <span><span class="research-dot type-systems"></span> Type Systems</span>
+                            <span><span class="research-dot tools-languages"></span> Tools and Languages</span>
+                            <span><span class="research-dot misc"></span> Misc</span>
+                        </div>
+
+                        <!-- ==================== 2026 ==================== -->
+                        <h3 class="publication-year-header">2026</h3>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_typed_ir_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typed_ir')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>A Typed Intermediate Representation for Dynamic Languages</div>
+                            <div class="publication-authors">M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek</div>
+                            <div class="publication-venue">ACM Transactions on Programming Languages and Systems (TOPLAS), under review</div>
+                            <div id="abstract_laurent_typed_ir" class="publication-abstract">
+                                <p class="abstract-text">This paper presents key design decisions for a statically typed, high-level intermediate representation that directly supports optimizations such as specialization, devirtualization, inlining, and copy elimination.</p>
+                            </div>
+                            <div id="bibtex_laurent_typed_ir" class="bibtex-content" style="display: none;">
+                                <pre>@article{laurent_typed_ir_2026,
+    title = {{A Typed Intermediate Representation for Dynamic Languages}},
+    author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski, Sebastián and Vitek, Jan},
+    year = {2026},
+    journal = {ACM Transactions on Programming Languages and Systems},
+    note = {Under review},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_kururin_2026.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.4230/LIPIcs.CVIT.2016.23" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_kururin')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot misc"></span>Finding Shortest Walks in Kuru Kuru Kururin</div>
+                            <div class="publication-authors">M. Laurent, M. Mallem</div>
+                            <div class="publication-venue">13th International Conference on Fun with Algorithms (FUN 2026), LIPIcs, 2026</div>
+                            <div id="abstract_laurent_kururin" class="publication-abstract">
+                                <p class="abstract-text">This paper serves as a celebration of the twenty-fifth anniversary of Kuru Kuru Kururin. Although this video game is presented as a collection of two-dimensional puzzles based on rotation, it naturally invites players to complete its levels as quickly as possible. This has led to a surprisingly rich and challenging playing field to finding foremost temporal walks. In this work, we tackle this problem both in theory and in practice. First, we introduce a model for the game and provide an in-depth complexity analysis. Most notably, we show how each gameplay mechanic independently brings a layer of NP-hardness and/or co-NP-hardness. We also provide a pseudo-polynomial time algorithm for the general problem and identify several cases which can be solved in polynomial time. Along the way, we discuss connections to the more established framework of temporal graphs, both in the point model and the interval model. Then, we propose simple and flexible algorithmic techniques to reduce state space and guide the search, offering trade-offs between precision and computation speed in practice. These techniques were implemented and tested using a full recreation of the game physics and the levels from the original game. We demonstrate the efficiency of our framework in several settings - with or without taking damage, with or without unintended game mechanics - and relate empirical struggles which we encountered in practice to our complexity analysis. Our implementation is open source and fully available online, offering a novel and amusing setting to benchmark shortest path algorithms.</p>
+                            </div>
+                            <div id="bibtex_laurent_kururin" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{laurent_kururin_2026,
+    title = {{Finding Shortest Walks in Kuru Kuru Kururin}},
+    author = {Laurent, Micka\"{e}l and Mallem, Maher},
+    year = {2026},
+    booktitle = {{13th International Conference on Fun with Algorithms (FUN 2026)}},
+    series = {{LIPIcs}},
+    doi = {10.4230/LIPIcs.CVIT.2016.23},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_stt_implem_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_stt')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Implementing Set-Theoretic Types</div>
+                            <div class="publication-authors">M. Laurent, K. Nguyễn</div>
+                            <div class="publication-venue">Under review, 2026</div>
+                            <div id="abstract_laurent_stt" class="publication-abstract">
+                                <p class="abstract-text">Set-theoretic types provide a rich type algebra that supports unrestricted unions, intersections, and negations, together with a decidable type constraint-solving algorithm known as tallying. These types are particularly well suited for typing dynamic languages, where functions often exhibit both generic and overloaded behavior. However, the complexity of their implementation has hindered their widespread adoption. In this paper, we introduce a modular representation for set-theoretic types and revisit the algorithms for subtyping and tallying. We compare our approach with the historical CDuce implementation and evaluate the performance impact of some optimizations and design choices.</p>
+                            </div>
+                            <div id="bibtex_laurent_stt" class="bibtex-content" style="display: none;">
+                                <pre>@misc{laurent_stt_2026,
+    title = {{Implementing Set-Theoretic Types}},
+    author = {Laurent, Mickaël and Nguyễn, Kim},
+    year = {2026},
+    note = {Under review},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/grimm_stochastic_penal_colony_2026.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.48550/arXiv.2602.00033" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new6')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Mapping the Stochastic Penal Colony</div>
+                            <div class="publication-authors">R. Grimm</div>
+                            <div class="publication-venue">arXiv preprint, 2026</div>
+                            <div id="abstract_new6" class="publication-abstract">
+                                <p class="abstract-text">With peak content moderation seemingly behind us, this paper revisits its punitive side. But instead of focusing on who is being (disproportionately) moderated, it focuses on the punishment itself and makes three contributions. First, it develops a novel methodology that combines auto-ethnography for collecting experiences and artifacts with procedural justice for analyzing them. Second, it reworks Foucault's model of the penal system for the algorithmic age, restoring the penal colony as the historically liminal practice between punishment as performance and punishment as discipline, i.e., the stochastic penal colony. Finally, it applies this methodological and conceptual framing to three case studies, one on the gallingly performative moderation by pre-Musk Twitter, one on the exhaustively punitive content moderation for OpenAI's DALLE~2, and one on the relatively light touch but still rather precious moderation by Pinterest. While substantially different, all three feature the pervasive threat of account suspension, thereby banishing users to the stochastic penal colony.</p>
+                            </div>
+                            <div id="bibtex_new6" class="bibtex-content" style="display: none;">
+                                <pre>@misc{grimm2026mappingstochasticpenalcolony,
+    title = {{Mapping the Stochastic Penal Colony}},
+    author = {Grimm, Robert},
+    year = {2026},
+    eprint = {2602.00033},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CY},
+    doi = {10.48550/arXiv.2602.00033},
+    url = {https://arxiv.org/abs/2602.00033},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/petricek_limits_programming_2026.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1007/978-3-032-08187-2_11" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d1')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>On the Limits of Making Programming Easy</div>
+                            <div class="publication-authors">T. Petříček, J. Jakubovic</div>
+                            <div class="publication-venue">Languages, Compilers, Analysis -- From Beautiful Theory to Useful Practice (Festschrift), Springer, 2026</div>
+                            <div id="abstract_d1" class="publication-abstract">
+                                <p class="abstract-text">A lot of programming research shares the same basic motivation: how can we make programming easier? Alas, this problem is difficult to tackle directly. Programming is a tangle of conceptual models, programming languages, user interfaces and more and we cannot advance all of these at the same time. Moreover, we have no good metric for measuring whether programming is easy. As a result, we usually give up on the original motivation and pursue narrow tractable research for which there is a rigorous methodology. In this paper, we investigate the limits of making programming easy. We use a dialectic method to circumscribe the design space within which easier programming systems may exist. In doing so, we not only bring together ideas on open-source software, self-sustainable systems, visual programming languages, but also the analysis of limits by Fred Brooks in his classic "No Silver Bullet" essay. We sketch a possible path towards easier programming of the future, but more importantly, we argue for the importance of proto-theories as a method for tackling the original motivating basic research question.</p>
+                            </div>
+                            <div id="bibtex_d1" class="bibtex-content" style="display: none;">
+                                <pre>@incollection{petricek_limits_2026,
+    title = {{On the Limits of Making Programming Easy}},
+    author = {Petricek, Tomas and Jakubovic, Joel},
+    year = {2026},
+    booktitle = {{Languages, Compilers, Analysis -- From Beautiful Theory to Useful Practice}},
+    publisher = {Springer},
+    series = {{LNCS}},
+    volume = {15500},
+    pages = {215--233},
+    doi = {10.1007/978-3-032-08187-2_11},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_type_inference_imp_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typeinf_imp')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Type Inference for Functional and Imperative Dynamic Languages</div>
+                            <div class="publication-authors">M. Laurent, J. Vitek</div>
+                            <div class="publication-venue">OOPSLA 2026 (accepted)</div>
+                            <div id="abstract_laurent_typeinf_imp" class="publication-abstract">
+                                <p class="abstract-text">In this paper, we formalize a type system based on set-theoretic types for dynamic languages that support both functional and imperative programming paradigms. We adapt prior work in the typing of overloaded and generic functions to support an impure &lambda;-calculus, focusing on imperative features commonly found in dynamic languages such as JavaScript, Python, and Julia. We introduce a general notion of parametric opaque data types using set-theoretic types, enabling precise modeling of mutable data structures while promoting modularity, clarity, and readability. Finally, we compare our approach to existing work and evaluate our prototype implementation on a range of examples.</p>
+                            </div>
+                            <div id="bibtex_laurent_typeinf_imp" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{laurent_typeinference_imp_2026,
+    title = {{Type Inference for Functional and Imperative Dynamic Languages}},
+    author = {Laurent, Mickaël and Vitek, Jan},
+    year = {2026},
+    booktitle = {{Proc. ACM Program. Lang. (OOPSLA)}},
+    note = {Accepted},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/2508.04865v2.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://arxiv.org/abs/2508.04865" target="_blank" class="pub-link secondary">arXiv</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_boruch_agnostics')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Agnostics: Learning to Synthesize Code in Any Programming Language with a Universal Reinforcement Learning Environment</div>
+                            <div class="publication-authors">A. Boruch-Gruszecki, Y. Zi, Z. Wu, T. Oberoi, C. J. Anderson, J. Biswas, A. Guha</div>
+                            <div class="publication-venue">International Conference on Learning Representations (ICLR), 2026</div>
+                            <div id="abstract_boruch_agnostics" class="publication-abstract">
+                                <p class="abstract-text">Large language models (LLMs) excel at writing code in high-resource languages such as Python and JavaScript, yet stumble on low-resource languages that remain essential to science and engineering. We introduce Agnostics, a language-agnostic post-training pipeline that eliminates per-language engineering. The key idea is to judge code solely by its externally observable behavior, so a single verifier can test solutions written in any language. Applied to five low-resource languages — Lua, Julia, R, OCaml, and Fortran — Agnostics improves Qwen-3 4B to performance rivaling other 16B–70B open-weight models, scales to larger and diverse model families, and for ≤16B parameter models, sets new state-of-the-art pass@1 results on MultiPL-E and a new multi-language version of LiveCodeBench.</p>
+                            </div>
+                            <div id="bibtex_boruch_agnostics" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{boruchgruszecki_agnostics_2026,
+    title = {{Agnostics: Learning to Synthesize Code in Any Programming Language with a Universal Reinforcement Learning Environment}},
+    author = {Boruch-Gruszecki, Aleksander and Zi, Yangtian and Wu, Zixuan and Oberoi, Tejas and Anderson, Carolyn Jane and Biswas, Joydeep and Guha, Arjun},
+    year = {2026},
+    booktitle = {{International Conference on Learning Representations (ICLR)}},
+}</pre>
+                            </div>
+                        </div>
+
+                        <!-- ==================== 2025 ==================== -->
+                        <h3 class="publication-year-header">2025</h3>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/husak_slicito_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1109/ICPC66645.2025.00048" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d3')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Combining Static Analysis Techniques for Program Comprehension Using Slicito</div>
+                            <div class="publication-authors">R. Husak, J. Kofroň, F. Zavoral</div>
+                            <div class="publication-venue">Proceedings of the 33rd International Conference on Program Comprehension (ICPC 2025)</div>
+                            <div id="abstract_d3" class="publication-abstract">
+                                <p class="abstract-text">While program comprehension tools often use static program analysis techniques to obtain useful information, they usually work only with sufficiently scalable techniques with limited precision. A possible improvement of this approach is to let the developer interactively reduce the scope of the code being analyzed and then apply a more precise analysis technique to the reduced scope. This paper presents a new version of the tool Slicito that allows developers to perform this kind of exploration on C# code in Visual Studio. A common usage of Slicito is to use interprocedural data-flow analysis to identify the parts of the code most relevant for the given task and then apply symbolic execution to reason about the precise behavior of these parts. Inspired by Moldable Development, Slicito provides a set of program analysis and visualization building blocks that can be used to create specialized program comprehension tools directly in Visual Studio.</p>
+                            </div>
+                            <div id="bibtex_d3" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{husak_slicito_2025,
+    title = {{Combining Static Analysis Techniques for Program Comprehension Using Slicito}},
+    author = {Husak, Robert and Kofroň, Jan and Zavoral, Filip},
+    year = {2025},
+    booktitle = {{Proceedings of the 33rd International Conference on Program Comprehension}},
+    series = {{ICPC '25}},
+    doi = {10.1109/ICPC66645.2025.00048},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/kocourek_copyandpatch_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3759548.3763370" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex2')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Copy-and-Patch Just-in-Time Compiler for R</div>
+                            <div class="publication-authors">M. Kocourek, F. Křikava, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 17th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, 2025</div>
+                            <div id="abstract2" class="publication-abstract">
+                                <p class="abstract-text">Copy-and-patch is a technique for building baseline just-in-time compilers from existing interpreters. It has been successfully applied to languages such as Lua and Python. This paper reports on our experience using this technique to implement a compiler for the R programming language. We describe how this new compiler integrates with the GNU R virtual machine, present the key optimizations we implemented, and evaluate the feasibility of this approach for R. Copy-and-patch also allows extensions such as integration of the feedback recording required by multi-tier compilation. Our evaluation on 57 programs demonstrates very fast compilation times (980 bytecode instructions per millisecond), reasonable performance gains (1.15x–1.91x speedup over GNU R), and manageable implementation complexity.</p>
+                            </div>
+                            <div id="bibtex2" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{kocourek_copyandpatch_2025,
+    title = {{Copy-and-Patch Just-in-Time Compiler for R}},
+    author = {Kocourek, Matěj and Křikava, Filip and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Proceedings of the 17th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages}},
+    publisher = {Association for Computing Machinery},
+    series = {{VMIL '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3759548.3763370},
+    isbn = {979-8-4007-2164-9},
+    pages = {12--21},
+    url = {https://doi.org/10.1145/3759548.3763370},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/petricek_denicek_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3746059.3747646" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new1')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Denicek: Computational Substrate for Document-Oriented End-User Programming</div>
+                            <div class="publication-authors">T. Petříček, J. Edwards</div>
+                            <div class="publication-venue">Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology, 2025</div>
+                            <div id="abstract_new1" class="publication-abstract">
+                                <p class="abstract-text">User-centric programming research gave rise to a variety of compelling programming experiences, including collaborative source code editing, programming by demonstration, incremental recomputation, schema change control, end-user debugging and concrete programming. Those experiences advance the state of the art of end-user programming, but they are hard to implement on the basis of established programming languages and system.
+                                    We contribute Denicek, a computational substrate that simplifies the implementation of the above programming experiences. Denicek represents a program as a series of edits that construct and transform a document consisting of data and formulas. Denicek provides three operations on edit histories: edit application, merging of histories and conflict resolution. Many programming experiences can be easily implemented by composing these three operations.
+                                    We present the architecture of Denicek, discuss key design considerations and elaborate the implementation of a variety of programming experiences. To evaluate the proposed substrate, we use Denicek to develop an innovative interactive data science notebook system. The case study shows that the Denicek computational substrate provides a suitable basis for the design of rich, interactive end-user programming systems.</p>
+                            </div>
+                            <div id="bibtex_new1" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{petricek_denicek_2025,
+    title = {{Denicek: Computational Substrate for Document-Oriented End-User Programming}},
+    author = {Petricek, Tomas and Edwards, Jonathan},
+    year = {2025},
+    booktitle = {{Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology}},
+    publisher = {Association for Computing Machinery},
+    series = {{UIST '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3746059.3747646},
+    isbn = {979-8-4007-2037-6},
+    pages = {1--19},
+    url = {https://doi.org/10.1145/3746059.3747646},
+    shorttitle = {Denicek},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-title"><span class="research-dot data-science"></span>Ethics of Sentiment Analysis and Theology</div>
+                            <div class="publication-authors">V. Ježek</div>
+                            <div class="publication-venue">HTS Teologiese Studies/Theological Studies, April 2025 </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_jezek1')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Gregory of Nyssa and the Witch of Endor in the Context of Machine Learning</div>
+                            <div class="publication-authors">V. Ježek</div>
+                            <div class="publication-venue">Rocznik Teologiczny (Theological Yearbook), 67(3), pp. 451–472, 2025</div>
+                            <div id="abstract_jezek1" class="publication-abstract">
+                                <p class="abstract-text">Experimental theological exegesis connecting Gregory of Nyssa's interpretation of an Old Testament text with concepts from machine learning.</p>
+                            </div>
+                            <div id="bibtex_jezek1" class="bibtex-content" style="display: none;">
+                                <pre>@article{jezek_gregory_2025,
+    title = {{Gregory of Nyssa and the Witch of Endor in the Context of Machine Learning}},
+    author = {Ježek, Václav},
+    year = {2025},
+    journal = {Rocznik Teologiczny},
+    volume = {67},
+    number = {3},
+    pages = {451--472},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/kliber_concurrency_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1007/978-3-032-06847-7_7" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d8')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Locating Concurrency Errors in Windows .NET Applications by Fuzzing over Thread Schedules</div>
+                            <div class="publication-authors">F. Kliber, P. Parízek</div>
+                            <div class="publication-venue">31st International Symposium on Model Checking Software (SPIN 2025)</div>
+                            <div id="abstract_d8" class="publication-abstract">
+                                <p class="abstract-text">We present a new fuzzing technique for multithreaded C# programs running on the .NET platform. It is built upon the .NET Profiling library, supported by CLR (Common Language Runtime) on Windows, and uses configurable strategies for the fuzzing process. During execution of the subject program, the fuzzing algorithm controls thread scheduling and preemption through suspending and resuming threads at specific code locations that we call stop points. For the purpose of driving the fuzzing process, we have designed a hybrid systematic-random strategy that gradually finds yet unexplored thread schedules. Results of experiments with programs from the SCT benchmark collection show that our tool is able to find errors triggered by specific thread interleavings, and within practical time limits.</p>
+                            </div>
+                            <div id="bibtex_d8" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{kliber_concurrency_2025,
+    title = {{Locating Concurrency Errors in Windows .NET Applications by Fuzzing over Thread Schedules}},
+    author = {Kliber, Filip and Parízek, Pavel},
+    year = {2025},
+    booktitle = {{31st International Symposium on Model Checking Software}},
+    series = {{SPIN '25}},
+    publisher = {Springer},
+    volume = {15945},
+    pages = {125--141},
+    doi = {10.1007/978-3-032-06847-7_7},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/donatbouillud_r4r_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3736731.3746156" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex3')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>R4R: Reproducibility for R</div>
+                            <div class="publication-authors">P. Donat-Bouillud, F. Křikava, S. Krynski, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 3rd ACM Conference on Reproducibility and Replicability, 2025</div>
+                            <div id="abstract3" class="publication-abstract">
+                                <p class="abstract-text">Ensuring reproducibility is a fundamental challenge in computational research. Reproducing results often requires reconstructing complex software environments involving data files, external tools, system libraries, and language-specific packages. While various tools aim to simplify this process, they often rely on user-provided metadata, overlook system dependencies, or produce unnecessarily large environments. We present r4r, a tool that automates the creation of minimal, user-inspectable, self-contained execution environments through dynamic program analysis techniques. r4r captures all runtime dependencies of a data analysis pipeline and produces a Docker image capable of reproducing the original execution. Although designed with first-class support for the R programming language, r4r also includes a generic fallback mechanism applicable to other languages. We evaluate r4r on a collection of R Markdown notebooks from Kaggle and find that it achieves exact reproducibility for 97.5% of deterministic notebooks.</p>
+                            </div>
+                            <div id="bibtex3" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{donatbouillud_r4r_2025,
+    title = {{R4R: Reproducibility for R}},
+    author = {Donat-Bouillud, Pierre and Křikava, Filip and Krynski, Sebastian and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Proceedings of the 3rd ACM Conference on Reproducibility and Replicability}},
+    publisher = {Association for Computing Machinery},
+    series = {{ACM REP '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3736731.3746156},
+    isbn = {9798400719585},
+    pages = {132--142},
+    url = {https://doi.org/10.1145/3736731.3746156},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/jakubovic_unix_smalltalk_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3759429.3762633" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new2')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot misc"></span>The Unix Executable as a Smalltalk Method: And Its Implications for Unix-Smalltalk Unification</div>
+                            <div class="publication-authors">J. Jakubovic</div>
+                            <div class="publication-venue">ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2025)</div>
+                            <div id="abstract_new2" class="publication-abstract">
+                                <p class="abstract-text">Unix and Smalltalk are very different in the details, but bear curious similarities in their broad outlines. Prior work has made these comparisons at a high level and sketched a path for retrofitting Smalltalk's advantages onto Unix (without compromising the advantages of the latter). Everybody seems to agree on identifying the Unix file with the Smalltalk object, but this still leaves much unspecified. I argue that we should identify the Unix executable with the Smalltalk method. A Smalltalk VM implementation via the filesystem falls out quite easily from this premise; however, the severe overhead associated with Unix processes casts doubt on its practical realisation. Nevertheless, we can see several ways around this problem. The connection shows promise for realising the benefits of Smalltalk within Unix without sequestering the former in a hermetically sealed image and VM.</p>
+                            </div>
+                            <div id="bibtex_new2" class="bibtex-content" style="display: none;">
+                                <pre> @inproceedings{jakubovic_unix_2025,
+    title = {{The Unix Executable as a Smalltalk Method: And Its Implications for Unix-Smalltalk Unification}},
+    author = {Jakubovic, Joel},
+    year = {2025},
+    booktitle = {{Proceedings of the 2025 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software}},
+    publisher = {Association for Computing Machinery},
+    series = {{Onward! '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3759429.3762633},
+    isbn = {979-8-4007-2151-9},
+    pages = {227--242},
+    url = {https://dl.acm.org/doi/10.1145/3759429.3762633},
+    shorttitle = {The Unix Executable as a Smalltalk Method},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_typed_ir_r_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.4230/OASIcs.Programming.2025.24" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex4')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Toward a Typed Intermediate Language for R</div>
+                            <div class="publication-authors">M. Laurent, J. Hain, F. Krikava, S. Krynski, J. Vitek</div>
+                            <div class="publication-venue">Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)</div>
+                            <div id="abstract4" class="publication-abstract">
+                                <p class="abstract-text">Compilers for dynamic languages often rely on intermediate representations with explicit type annotations to facilitate writing program transformations. This paper documents the design of a new typed intermediate representation for a just-in-time compiler for the R programming language called FIŘ. Type annotations, in FIŘ, capture properties such as sharing, the potential for effects, and compiler speculations. In this extended abstract, we focus on the sharing properties that may be used to optimize away some copies of values.</p>
+                            </div>
+                            <div id="bibtex4" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{laurent_toward_2025,
+    title = {{Toward a Typed Intermediate Language for R}},
+    author = {Laurent, Mickaël and Hain, Jakob and Krikava, Filip and Krynski, Sebastián and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)}},
+    editor = {Edwards, Jonathan and Perera, Roly and Petricek, Tomas},
+    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+    series = {{Open Access Series in Informatics (OASIcs)}},
+    location = {Dagstuhl, Germany},
+    doi = {10.4230/OASIcs.Programming.2025.24},
+    isbn = {978-3-95977-382-9},
+    pages = {24:1--24:4},
+    url = {https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.24},
+    volume = {134},
+}</pre>
+                            </div>
+                        </div>
+
+                        <!-- ==================== 2024 ==================== -->
+                        <h3 class="publication-year-header">2024</h3>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/parizek_manta_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3639477.3639739" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d14')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Data Lineage Analysis for Enterprise Applications by Manta: The Story of Java and C# Scanners</div>
+                            <div class="publication-authors">P. Parízek, L. Hermann</div>
+                            <div class="publication-venue">46th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP 2024)</div>
+                            <div id="abstract_d14" class="publication-abstract">
+                                <p class="abstract-text">Data lineage is a view over the whole data environment of a business company or government institution, which represents the flow of data values through the system. It helps people to navigate through all the data storages and data transformations, find the origin of a specific data value, or to ensure data consistency after updates. Manta Flow is an automated data lineage platform that supports many different technologies, including dialects of SQL and programs code written in general-purpose languages. In this paper, we focus on scanners that analyze programs in Java or C# and generate data flow graphs as output. We describe the process of their development and present the main concepts of the modular symbolic data flow analysis that we designed for this purpose. Then we also discuss technical challenges related to static analysis of real-world enterprise applications that we have faced, explain the key ideas of our current solutions, and share the main lessons learned within this project.</p>
+                            </div>
+                            <div id="bibtex_d14" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{parizek_manta_2024,
+    title = {{Data Lineage Analysis for Enterprise Applications by Manta: The Story of Java and C\# Scanners}},
+    author = {Parízek, Pavel and Hermann, Lukas},
+    year = {2024},
+    booktitle = {{46th International Conference on Software Engineering: Software Engineering in Practice}},
+    series = {{ICSE-SEIP '24}},
+    pages = {25--35},
+    doi = {10.1145/3639477.3639739},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/belyakova_decidable_julia_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3656421" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex5')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Decidable Subtyping of Existential Types for Julia</div>
+                            <div class="publication-authors">J. Belyakova, B. Chung, R. Tate, J. Vitek</div>
+                            <div class="publication-venue">Proc. ACM Program. Lang. 8(PLDI), 2024</div>
+                            <div id="abstract5" class="publication-abstract">
+                                <p class="abstract-text">Julia is a modern scientific-computing language that relies on multiple dispatch to implement generic libraries. While the language does not have a static type system, method declarations are decorated with expressive type annotations to determine when they are applicable. To find applicable methods, the implementation uses subtyping at run-time. We show that Julia's subtyping is undecidable, and we propose a restriction on types to recover decidability by stratifying types into method signatures over value types---where the former can freely use bounded existential types but the latter are restricted to use-site variance. A corpus analysis suggests that nearly all Julia programs written in practice already conform to this restriction.</p>
+                            </div>
+                            <div id="bibtex5" class="bibtex-content" style="display: none;">
+                                <pre>@article{belyakova_decidable_2024,
+    title = {{Decidable Subtyping of Existential Types for Julia}},
+    author = {Belyakova, Julia and Chung, Benjamin and Tate, Ross and Vitek, Jan},
+    year = {2024},
+    journal = {{Proc. ACM Program. Lang.}},
+    number = {PLDI},
+    doi = {10.1145/3656421},
+    pages = {191:1091--191:1114},
+    url = {https://dl.acm.org/doi/10.1145/3656421},
+    volume = {8},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/boruchgruszecki_gradient_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3689751" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new3')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Gradient: Gradual Compartmentalization via Object Capabilities Tracked in Types</div>
+                            <div class="publication-authors">A. Boruch-Gruszecki, A. Ghosn, M. Payer, C. Pit-Claudel</div>
+                            <div class="publication-venue">Proceedings of the ACM on Programming Languages, Volume 8, Issue OOPSLA, 2024</div>
+                            <div id="abstract_new3" class="publication-abstract">
+                                <p class="abstract-text">Modern software needs fine-grained compartmentalization, i.e., intra-process isolation. A particularly important reason for it are supply-chain attacks, the need for which is aggravated by modern applications depending on hundreds or even thousands of libraries. Object capabilities are a particularly salient approach to compartmentalization, but they require the entire program to assume a lack of ambient authority. Most of existing code was written under no such assumption; effectively, existing applications need to undergo a rewrite-the-world migration to reap the advantages of ocap. We propose gradual compartmentalization, an approach which allows gradually migrating an application to object capabilities, component by component in arbitrary order, all the while continuously enjoying security guarantees. The approach relies on runtime authority enforcement and tracking the authority of objects the type system. We present Gradient, a proof-of-concept gradual compartmentalization extension to Scala which uses Enclosures and Capture Tracking as its key components. We evaluate our proposal by migrating the standard XML library of Scala to Gradient.</p>
+                            </div>
+                            <div id="bibtex_new3" class="bibtex-content" style="display: none;">
+                                <pre>@article{boruch_gruszecki_gradient_2024,
+    title = {{Gradient: Gradual Compartmentalization via Object Capabilities Tracked in Types}},
+    author = {Boruch-Gruszecki, Aleksander and Ghosn, Adrien and Payer, Mathias and Pit-Claudel, Clément},
+    year = {2024},
+    journal = {Proc. ACM Program. Lang.},
+    volume = {8},
+    number = {OOPSLA},
+    doi = {10.1145/3689751},
+    url = {https://doi.org/10.1145/3689751},
+}</pre>
+                            </div>
+                        </div>
+
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/dort_pure_rodot_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2024.13" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new4')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Pure Methods for roDOT</div>
+                            <div class="publication-authors">V. Dort, Y. Li, O. Lhoták, P. Parízek</div>
+                            <div class="publication-venue">38th European Conference on Object-Oriented Programming (ECOOP 2024)</div>
+                            <div id="abstract_new4" class="publication-abstract">
+                                <p class="abstract-text">Object-oriented programming languages typically allow mutation of objects, but pure methods are common too. There is great interest in recognizing which methods are pure, because it eases analysis of program behavior and allows modifying the program without changing its behavior. The roDOT calculus is a formal calculus extending DOT with reference mutability. In this paper, we explore purity conditions in roDOT and pose a SEF guarantee, by which the type system guarantees that methods of certain types are side-effect free. We use the idea from ReIm to detect pure methods by argument types. Applying this idea to roDOT required just a few changes to the type system, but necessitated re-working a significant part of the soundness proof. In addition, we state a transformation guarantee, which states that in a roDOT program, calls to SEF methods can be safely reordered without changing the outcome of the program. We proved type soundness of the updated roDOT calculus, using multiple layers of typing judgments. We proved the SEF guarantee by applying the Immutability guarantee, and the transformation guarantee by applying the SEF guarantee within a framework for reasoning about safe transformations of roDOT programs. All proofs are mechanized in Coq.</p>
+                            </div>
+                            <div id="bibtex_new4" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{dort_pure_2024,
+    title = {{Pure Methods for roDOT}},
+    author = {Dort, Vlastimil and Li, Yufeng and Lhoták, Ondřej and Parizek, Pavel},
+    year = {2024},
+    booktitle = {{38th European Conference on Object-Oriented Programming (ECOOP 2024)}},
+    publisher = {Schloss Dagstuhl - Leibniz-Zentrum für Informatik},
+    series = {{LIPIcs}},
+    doi = {10.4230/LIPICS.ECOOP.2024.13},
+    pages = {13:1--13:29},
+    url = {https://doi.org/10.4230/LIPIcs.ECOOP.2024.13},
+    volume = {313},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/grimm_accountability_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.48550/arXiv.2402.14625" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_new5')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Putting the Count Back Into Accountability: An Analysis of Transparency Data About the Sexual Exploitation of Minors</div>
+                            <div class="publication-authors">R. Grimm</div>
+                            <div class="publication-venue">arXiv preprint, 2024</div>
+                            <div id="abstract_new5" class="publication-abstract">
+                                <p class="abstract-text">Alarmist and sensationalist statements about the "explosion" of online child sexual exploitation or CSE dominate much of the public discourse about the topic. Based on a new dataset collecting the transparency disclosures for 16 US-based internet platforms and the national clearinghouse collecting legally mandated reports about CSE, this study seeks answers to two research questions: First, what does the data tell us about the growth of online CSE? Second, how reliable and trustworthy is that data? To answer the two questions, this study proceeds in three parts. First, we leverage a critical literature review to synthesize a granular model for CSE reporting. Second, we analyze the growth in CSE reports over the last 25 years and correlate it with the growth of social media user accounts. Third, we use two comparative audits to assess the quality of transparency data. Critical findings include: First, US law increasingly threatens the very population it claims to protect, i.e., children and adolescents. Second, the rapid growth of CSE report over the last decade is linear and largely driven by an equivalent growth in social media user accounts. Third, the Covid-19 pandemic had no statistically relevant impact on report volume. Fourth, while half of surveyed organizations release meaningful and reasonably accurate transparency data, the other half either fail to make disclosures or release data with severe quality issues.</p>
+                            </div>
+                            <div id="bibtex_new5" class="bibtex-content" style="display: none;">
+                                <pre>@misc{grimm2024puttingcountaccountabilityanalysis,
+    title = {{Putting the Count Back Into Accountability: An Analysis of Transparency Data About the Sexual Exploitation of Minors}},
+    author = {Grimm, Robert},
+    year = {2024},
+    eprint = {2402.14625},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CY},
+    doi = {10.48550/arXiv.2402.14625},
+    url = {https://arxiv.org/abs/2402.14625},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/krynski_reducing_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3689490.3690404" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex6')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Reducing Feedback Pollution</div>
+                            <div class="publication-authors">S. Krynski, M. Štěpánek, F. Říha, F. Křikava, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 16th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, 2024</div>
+                            <div id="abstract6" class="publication-abstract">
+                                <p class="abstract-text">Just-in-time compilers enhance the performance of future invocations of a function by generating code tailored to past behavior. To achieve this, compilers use a data structure, often referred to as a feedback vector, to record information about each function's invocations. However, over time, feedback vectors tend to become less precise, leading to lower-quality code – a phenomenon known as feedback vector pollution. This paper examines feedback vector pollution within the context of a compiler for the R language. We provide data, discuss an approach to reduce pollution in practice, and implement a proof-of-concept implementation of this approach. The preliminary results of the implementation indicate ∼30% decrease in polluted compilations and ∼37% decrease in function pollution throughout our corpus.</p>
+                            </div>
+                            <div id="bibtex6" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{krynski_reducing_2024,
+    title = {{Reducing Feedback Pollution}},
+    author = {Krynski, Sebastián and Štěpánek, Michal and Říha, Filip and Křikava, Filip and Vitek, Jan},
+    year = {2024},
+    booktitle = {{Proceedings of the 16th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages}},
+    publisher = {Association for Computing Machinery},
+    series = {{VMIL '24}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3689490.3690404},
+    isbn = {979-8-4007-1213-5},
+    pages = {65--74},
+    url = {https://doi.org/10.1145/3689490.3690404},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-title"><span class="research-dot data-science"></span>Sentiment without Emotion: Sentiment Analysis and Theology</div>
+                            <div class="publication-authors">V. Ježek</div>
+                            <div class="publication-venue">Conference papers from the Phaicon conference 2024 "Analogia", March 2025</div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/maj_fault_stars_2024.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2024.27" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex7')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments</div>
+                            <div class="publication-authors">P. Maj, S. Muroya, K. Siek, L. Di Grazia, J. Vitek</div>
+                            <div class="publication-venue">ECOOP 2024</div>
+                            <div id="abstract7" class="publication-abstract">
+                                <p class="abstract-text">Large-scale software repositories are a source of insights for software engineering. They offer an unmatched window into the software development process at scale. Their sheer number and size holds the promise of broadly applicable results. At the same time, that very size presents practical challenges for scaling tools and algorithms to millions of projects. A reasonable approach is to limit studies to representative samples of the population of interest. Broadly applicable conclusions can then be obtained by generalizing to the entire population. The contribution of this paper is a standardized experimental design methodology for choosing the inputs of studies working with large-scale repositories. We advocate for a methodology that clearly lays out what the population of interest is, how to sample it, and that fosters reproducibility. Along the way, we discourage researchers from using extrinsic attributes of projects such as stars, that measure some unclear notion of popularity.</p>
+                            </div>
+                            <div id="bibtex7" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{maj_fault_2024,
+    title = {{The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments}},
+    author = {Maj, Petr and Muroya, Stefanie and Siek, Konrad and Di Grazia, Luca and Vitek, Jan},
+    year = {2024},
+    booktitle = {{DROPS-IDN/v2/document/10.4230/LIPIcs.ECOOP.2024.27}},
+    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+    doi = {10.4230/LIPIcs.ECOOP.2024.27},
+    url = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.27},
+    shorttitle = {The Fault in Our Stars},
+}</pre>
+                            </div>
+                        </div>
+
+                        <!-- ==================== 2023 ==================== -->
+                        <h3 class="publication-year-header">2023</h3>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/mehta_reusing_jit_2023.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3622839" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d19')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Reusing Just-in-Time Compiled Code</div>
+                            <div class="publication-authors">M. K. Mehta, S. Krynski, H. Musso Gualandi, M. Thakur, J. Vitek</div>
+                            <div class="publication-venue">Proc. ACM Program. Lang. 7(OOPSLA2), 2023</div>
+                            <div id="abstract_d19" class="publication-abstract">
+                                <p class="abstract-text">Most code is executed more than once. If not entire programs then libraries remain unchanged from one run to the next. Just-in-time compilers expend considerable effort gathering insights about code they compiled many times, and often end up generating the same binary over and over again. We explore how to reuse compiled code across runs of different programs to reduce warm-up costs of dynamic languages. We propose to use speculative contextual dispatch to select versions of functions from an off-line curated code repository. That repository is a persistent database of previously compiled functions indexed by the context under which they were compiled. The repository is curated to remove redundant code and to optimize dispatch. We assess practicality by extending Ř, a compiler for the R language, and evaluating its performance. Our results suggest that the approach improves warmup times while preserving peak performance.</p>
+                            </div>
+                            <div id="bibtex_d19" class="bibtex-content" style="display: none;">
+                                <pre>@article{mehta_reusing_2023,
+    title = {{Reusing Just-in-Time Compiled Code}},
+    author = {Mehta, Meetesh Kalpesh and Krynski, Sebastián and Musso Gualandi, Hugo and Thakur, Manas and Vitek, Jan},
+    year = {2023},
+    journal = {Proc. ACM Program. Lang.},
+    volume = {7},
+    number = {OOPSLA2},
+    pages = {1176--1197},
+    doi = {10.1145/3622839},
+}</pre>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logos">
+                        <div class="footer-logo msmt">
+                            <a href="">
+                                <img src="images/logo/msmt-logo-no-backgroung.png" alt="MŠMT">
+                            </a>
+                        </div>
+                        <div class="footer-logo charles">
+                            <a href="">
+                                <img src="images/logo/PR-56-version1-uk_uzitna_eng_barevna (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showBibtex(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        function toggleAbstract(id) {
+            var abstractDiv = document.getElementById(id);
+            var abstractText = abstractDiv.querySelector('.abstract-text');
+
+            if (abstractText.classList.contains('abstract-truncated')) {
+                abstractText.classList.remove('abstract-truncated');
+                abstractText.style.maxHeight = 'none';
+            } else {
+                abstractText.classList.add('abstract-truncated');
+                var lineHeight = parseFloat(window.getComputedStyle(abstractText).lineHeight);
+                abstractText.style.maxHeight = (lineHeight * 2) + 'px';
+            }
+        }
+
+        // Initialize abstracts on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var abstracts = document.querySelectorAll('.publication-abstract .abstract-text');
+            abstracts.forEach(function(abstract) {
+                var abstractDiv = abstract.closest('.publication-abstract');
+                var lineHeight = parseFloat(window.getComputedStyle(abstract).lineHeight);
+                var maxHeight = lineHeight * 2; // 2 lines
+
+                if (abstract.scrollHeight > maxHeight) {
+                    abstract.classList.add('abstract-truncated');
+                    abstract.style.maxHeight = maxHeight + 'px';
+
+                    abstract.onclick = function() {
+                        toggleAbstract(abstractDiv.id);
+                    };
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering of Data Analysis Pipelines - Software</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="content-section">
+            <div class="container">
+                <h2 class="section-header">Software</h2>
+
+                <div class="license-box">
+                    <h3>Licensing</h3>
+                    <p>All project software is released as open-source under permissive licenses. Selected tools are distributed under Apache 2.0 and MIT licenses; some components use GPL-3.0 or public-domain dedication. See individual repositories for detailed licensing information.</p>
+                </div>
+
+                <div class="software-grid">
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Linux file tracer</div>
+                                <div class="software-buttons">
+                                    <a href="https://zenodo.org/records/14560174" target="_blank" class="softw-link">Zenodo</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Filip Krikava, Pierre Donat-Bouillud, Petr Adámek, Sebastián Krynski, Jan Vitek</div>
+                            <p>The software is a tracer based on ptracer that can generate a log of all the files accessed by a program, and then create a docker image which the Ubuntu packages (and possibly R packages) required to run again the program.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Diaphanous: Transparency Disclosures About the Sexual Exploitation of Minors</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/apparebit/diaphanous/tree/v0.4" target="_blank" class="softw-link">GitHub</a>
+                                    <a href="https://zenodo.org/records/14417131" target="_blank" class="softw-link">Zenodo</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Robert Grimm</div>
+                            <p>This repository curates quantitative transparency disclosures about the online sexual exploitation of minors, i.e., people under the age of eighteen, in machine-readable form. It also includes a 4,400-line Python library for validating and tidying the data and Python as well as R notebooks with the analysis for the corresponding report "Putting the Count Back Into Accountability: An Analysis of Transparency Data About the Sexual Exploitation of Minors".</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Dataset of Czech religious texts</div>
+                                <div class="software-buttons">
+                                    <a href="https://zenodo.org/records/14651721" target="_blank" class="softw-link">Zenodo</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Alexander Kovalenko, Daniil Pastukhov, Jan Vitek</div>
+                            <p>This dataset contains a collection of religious texts in Czech (any type of religion) publicly available on the Internet. It has been curated from the SlimPajama-627B dataset using a classifier. The purposes of this dataset include exploring sentiments in religious texts and studying the evolution of religious sayings over time.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">SSTT: a modular set-theoretic types library</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/E-Sh4rk/sstt" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Mickael Laurent</div>
+                            <p>Library implementing set-theoretic types operations (set connectives, subtyping, constraint solving, etc.). This library is used for different research projects,
+                                in particular a type-checker for the language R developed at Czech Technical University, and Pysem, a Python type-checker under development at Université Paris-Saclay (France).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">MLsem: a type-checker for dynamic languages</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/E-Sh4rk/MLsem" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Mickael Laurent</div>
+                            <p>A type-checking library for dynamic languages, implementating advanced set-theoretic typing techniques (type inference, type narrowing, ad-hoc and parametric polymorphism, etc.). It aims to demonstrate the effectiveness and usability of set-theoretic types for typing dynamic languages such as JavaScript, Python, or R.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Compile Server for R</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/PRL-PRG/r-compile-server/" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <p>A prototype for a new compiler infrastructure for the R programming language. Instead of embedding the compiler in the language runtime, we have developed a compiler-as-a-service, a client-server system that offloads client compilation requests to a server with feedback-driven optimizations for R.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Feedback-driven optimizations for R</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/reactorlabs/rir/commits/contextual-TypeFeedbacks-recording/" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <p>Implementation of a proof-of-concept for keeping multiple feedback vectors, one per call context, and then using the newly available information for driving optimizations. It is done on top of RIR, a just-in-time compiler for the language R. The new branch also includes an in-house recording tool that enables fine-grained debugging of events in the virtual machine, such as function invocations, compilation, and deoptimization.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Shantay: EU DSA Transparency Database Processing Tool</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/apparebit/shantay" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Robert Grimm</div>
+                            <p>Software tool that processes the EU's DSA Transparency Database, producing comprehensive reports with timelines.</p>
+                        </div>
+                    </div>
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Denicek</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/d3sprog/denicek" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Tomáš Petříček</div>
+                            <p>Computational substrate for end-user document-oriented programming implementing collaborative editing and programming by demonstration.</p>
+                        </div>
+                    </div>
+
+                    <div class="software-card-wrapper">
+                        <div class="software-card">
+                            <div class="software-header">
+                                <div class="software-title">Smalltix</div>
+                                <div class="software-buttons">
+                                    <a href="https://github.com/jdjakub/smalltix" target="_blank" class="softw-link">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="software-authors">Joel Jakubovic</div>
+                            <p>Smalltalk VM implementation via the filesystem based on identifying Unix executables with Smalltalk methods.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logos">
+                        <div class="footer-logo msmt">
+                            <a href="">
+                                <img src="images/logo/msmt-logo-no-backgroung.png" alt="MŠMT">
+                            </a>
+                        </div>
+                        <div class="footer-logo charles">
+                            <a href="">
+                                <img src="images/logo/PR-56-version1-uk_uzitna_eng_barevna (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

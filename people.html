@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering of Data Analysis Pipelines - People</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="content-section">
+            <div class="container">
+                <h2 class="section-header">People</h2>
+                
+                <div class="people-grid">
+                    <!-- Professors -->
+                    <a href="#detail-vitek" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/jan_vitek.jpg" alt="Jan Vitek">
+                        </div>
+                        <div class="person-name-simple">Jan Vitek</div>
+                        <div class="person-title-simple">Professor</div>
+                    </a>
+
+                    <a href="#detail-kofron" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/jan_kofron.png" alt="Jan Kofroň">
+                        </div>
+                        <div class="person-name-simple">Jan Kofroň</div>
+                        <div class="person-title-simple">Professor</div>
+                    </a>
+
+                    <a href="#detail-parizek" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/pavel_parizek.png" alt="Pavel Parízek">
+                        </div>
+                        <div class="person-name-simple">Pavel Parízek</div>
+                        <div class="person-title-simple">Professor</div>
+                    </a>
+
+                    <a href="#detail-petricek" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/tomas_petricek.png" alt="Tomáš Petříček">
+                        </div>
+                        <div class="person-name-simple">Tomáš Petříček</div>
+                        <div class="person-title-simple">Professor</div>
+                    </a>
+
+                    <!-- Researchers -->
+                    <a href="#detail-grimm" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/robert_grimm.jpg" alt="Robert Grimm">
+                        </div>
+                        <div class="person-name-simple">Robert Grimm</div>
+                        <div class="person-title-simple">Researcher</div>
+                    </a>
+
+                    <a href="#detail-blicha" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/martin_blicha.png" alt="Martin Blicha">
+                        </div>
+                        <div class="person-name-simple">Martin Blicha</div>
+                        <div class="person-title-simple">Researcher</div>
+                    </a>
+
+                    <a href="#detail-boruch-gruszecki" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/aleksander_boruch-gruszecki.jpg" alt="Alek Boruch-Gruszecki">
+                        </div>
+                        <div class="person-name-simple">Alek Boruch-Gruszecki</div>
+                        <div class="person-title-simple">Researcher</div>
+                    </a>
+
+                    <a href="#detail-jezek" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/vaclav_jezek.webp" alt="Václav Ježek">
+                        </div>
+                        <div class="person-name-simple">Václav Ježek</div>
+                        <div class="person-title-simple">Researcher</div>
+                    </a>
+
+                    <!-- Postdocs -->
+                    <a href="#detail-jakubovic" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/joel_jakubovic.png" alt="Joel Jakubovic">
+                        </div>
+                        <div class="person-name-simple">Joel Jakubovic</div>
+                        <div class="person-title-simple">Postdoctoral Researcher</div>
+                    </a>
+
+                    <a href="#detail-laurent" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/mickael_laurent.jpg" alt="Mickael Laurent">
+                        </div>
+                        <div class="person-name-simple">Mickael Laurent</div>
+                        <div class="person-title-simple">Postdoctoral Researcher</div>
+                    </a>
+
+                    <!-- PhD Students -->
+                    <a href="#detail-hain" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/jakob_hain.jpg" alt="Jakob Hain">
+                        </div>
+                        <div class="person-name-simple">Jakob Hain</div>
+                        <div class="person-title-simple">PhD Student</div>
+                    </a>
+
+                    <a href="#detail-kocourek" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/placeholder_1.svg" alt="Matěj Kocourek">
+                        </div>
+                        <div class="person-name-simple">Matěj Kocourek</div>
+                        <div class="person-title-simple">PhD Student</div>
+                    </a>
+
+                    <!-- Research Assistants / Other -->
+                    <a href="#detail-skotorenko" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/placeholder_2.svg" alt="Anastasija Skotorenko">
+                        </div>
+                        <div class="person-name-simple">Anastasija Skotorenko</div>
+                        <div class="person-title-simple">Research Assistant</div>
+                    </a>
+
+                    <a href="#detail-holliday" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/placeholder_3.svg" alt="Vincent Holliday">
+                        </div>
+                        <div class="person-name-simple">Vincent Holliday</div>
+                        <div class="person-title-simple">Research Assistant</div>
+                    </a>
+
+                    <a href="#detail-lerch" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/lucie_lerch.jpg" alt="Lucie Lerch">
+                        </div>
+                        <div class="person-name-simple">Lucie Lerch</div>
+                        <div class="person-title-simple">Administrator</div>
+                    </a>
+
+                    <a href="#detail-sihler" class="person-card-simple">
+                        <div class="person-img-simple">
+                            <img src="images/people/florian_sihler.jpg" alt="Florian Sihler">
+                        </div>
+                        <div class="person-name-simple">Florian Sihler</div>
+                        <div class="person-title-simple">Visitor</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section bg-light-beige">
+            <div class="container">
+
+                <div class="research-legend" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                    <span><span class="research-dot data-science"></span> Practical Data Science</span>
+                    <span><span class="research-dot type-systems"></span> Type Systems</span>
+                    <span><span class="research-dot tools-languages"></span> Tools and Languages</span>
+                </div>
+
+                <h3 class="people-section-header">Current Members</h3>
+
+                <div class="person-card" id="detail-vitek">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/jan_vitek.jpg" alt="Jan Vitek">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://janvitek.org/" target="_blank">Jan Vitek</a> <span class="research-dot data-science"></span><span class="research-dot type-systems"></span><span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Professor</div>
+                            <div class="person-bio">
+                                <p>Works on the design and implementation of programming languages. Leads the project and collaborates across all three research directions, from type system design and compiler engineering to empirical studies of data science practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-grimm">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/robert_grimm.jpg" alt="Robert Grimm">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://apparebit.com/about/robert-grimm" target="_blank">Robert Grimm</a> <span class="research-dot data-science"></span></div>
+                            <div class="person-title">Researcher</div>
+                            <div class="person-bio">
+                                <p>Studies the application of data analysis to questions of accountability and transparency. Current work analyzes transparency disclosures from internet platforms to assess the reliability of reporting on child sexual exploitation, and develops methodologies combining auto-ethnography with procedural justice to study the punitive aspects of content moderation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-hain">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/jakob_hain.jpg" alt="Jakob Hain">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://jakobeha.github.io/" target="_blank">Jakob Hain</a> <span class="research-dot type-systems"></span><span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">PhD Student</div>
+                            <div class="person-bio">
+                                <p>Works on typed intermediate representations for dynamic languages. Contributes to the design of FIR, a statically typed high-level IR that makes optimization-relevant behaviors manifest and amenable to static analysis, enabling specialization, devirtualization, inlining, and copy elimination in the R JIT compiler.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-jakubovic">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/joel_jakubovic.png" alt="Joel Jakubovic">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://d3s.mff.cuni.cz/people/joeljakubovic/" target="_blank">Joel Jakubovic</a> <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Postdoctoral Researcher</div>
+                            <div class="person-bio">
+                                <p>Studies programming systems and end-user programming. Develops computational substrates that represent programs as series of edits on documents, enabling collaborative editing, programming by demonstration, and incremental recomputation. Also investigates the fundamental limits of making programming easier using dialectic methods and proto-theories.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-kocourek">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/placeholder_1.svg" alt="Matěj Kocourek">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name">Matěj Kocourek <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">PhD Student</div>
+                            <div class="person-bio">
+                                <p>Works on JIT compilation techniques for R. Builds a baseline compiler using copy-and-patch compilation that stitches together pre-compiled native code fragments from the existing GNU R interpreter, achieving fast compilation times and reasonable speedups with manageable implementation complexity as an external R package.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-kofron">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/jan_kofron.png" alt="Jan Kofroň">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://d3s.mff.cuni.cz/people/jankofron/" target="_blank">Jan Kofroň</a> <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Professor</div>
+                            <div class="person-bio">
+                                <p>Works on software verification and program analysis. Contributes to tools that let developers interactively combine static analysis techniques of varying precision for program comprehension, using scalable data-flow analysis to narrow scope before applying precise symbolic execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-laurent">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/mickael_laurent.jpg" alt="Mickael Laurent">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://mlaurent.ovh/" target="_blank">Mickael Laurent</a> <span class="research-dot type-systems"></span></div>
+                            <div class="person-title">Postdoctoral Researcher</div>
+                            <div class="person-bio">
+                                <p>Works on set-theoretic types and type inference for dynamic languages. Develops modular implementations of subtyping and tallying algorithms that support unrestricted unions, intersections, and negations, and extends these to handle imperative features such as mutable variables and parametric opaque data types. Also designs typed intermediate representations for optimizing R.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-lerch">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/lucie_lerch.jpg" alt="Lucie Lerch">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name">Lucie Lerch</div>
+                            <div class="person-title">Administrator</div>
+                            <div class="person-bio">
+                                <p>Project coordination and administrative support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-parizek">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/pavel_parizek.png" alt="Pavel Parízek">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://d3s.mff.cuni.cz/people/pavelparizek/" target="_blank">Pavel Parízek</a> <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Professor</div>
+                            <div class="person-bio">
+                                <p>Works on program analysis and verification tools. Develops modular symbolic data flow analysis for automated data lineage tracking in enterprise systems, tracing how data values flow across databases and application code at industrial scale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-petricek">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/tomas_petricek.png" alt="Tomáš Petříček">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://tomasp.net/" target="_blank">Tomáš Petříček</a> <span class="research-dot data-science"></span><span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Professor</div>
+                            <div class="person-bio">
+                                <p>Studies how people program and the limits of making programming easy. Develops document-oriented end-user programming systems and explores interdisciplinary perspectives on the practice of data science, drawing on ideas from open-source software, self-sustainable systems, and visual programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-skotorenko">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/placeholder_2.svg" alt="Anastasija Skotorenko">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name">Anastasija Skotorenko</div>
+                            <div class="person-title">Research Assistant</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="container">
+                <h3 class="people-section-header">Past Members</h3>
+
+                <div class="person-card" id="detail-blicha">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/martin_blicha.png" alt="Martin Blicha">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://d3s.mff.cuni.cz/people/martinblicha/" target="_blank">Martin Blicha</a> <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Researcher</div>
+                            <div class="person-bio">
+                                <p>Works on automated reasoning and software verification, developing SMT solvers and model checking tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-boruch-gruszecki">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/aleksander_boruch-gruszecki.jpg" alt="Alek Boruch-Gruszecki">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://abgru.me/" target="_blank">Alek Boruch-Gruszecki</a> <span class="research-dot type-systems"></span></div>
+                            <div class="person-title">Researcher</div>
+                            <div class="person-bio">
+                                <p>Works on gradual typing, type inference, and capability tracking. Develops gradual compartmentalization, an approach that allows incrementally migrating applications to object capabilities for intra-process isolation, combining runtime authority enforcement with type-system tracking to provide continuous security guarantees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-holliday">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/placeholder_3.svg" alt="Vincent Holliday">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name">Vincent Holliday</div>
+                            <div class="person-title">Research Assistant</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-jezek">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/vaclav_jezek.webp" alt="Václav Ježek">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name">Václav Ježek <span class="research-dot data-science"></span></div>
+                            <div class="person-title">Researcher</div>
+                            <div class="person-bio">
+                                <p>Studies the application of sentiment analysis and machine learning to humanities research. Investigates the ethical dimensions of applying data science methods to theological and historical texts, including analysis of patristic sources and the intersection of computational methods with traditional exegetical approaches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card" id="detail-sihler">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="person-img">
+                                <img src="images/people/florian_sihler.jpg" alt="Florian Sihler">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="person-name"><a href="https://eagleoutice.github.io/portfolio/" target="_blank">Florian Sihler</a> <span class="research-dot tools-languages"></span></div>
+                            <div class="person-title">Visitor</div>
+                            <div class="person-bio">
+                                <p>Works on dataflow analysis and static program slicing for R. Develops flowR, a hybrid analysis framework that combines static and dynamic techniques to help data scientists understand dependencies, identify dead code, and improve the quality of their analysis pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logos">
+                        <div class="footer-logo msmt">
+                            <a href="">
+                                <img src="images/logo/msmt-logo-no-backgroung.png" alt="MŠMT">
+                            </a>
+                        </div>
+                        <div class="footer-logo charles">
+                            <a href="">
+                                <img src="images/logo/PR-56-version1-uk_uzitna_eng_barevna (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

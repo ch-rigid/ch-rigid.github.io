@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering of Data Analysis Pipelines</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                    <h1>Engineering of Data Analysis Pipelines</h1>
+                    <p class="hero-subtitle">ChRiGiD</p>
+                    <p class="lead">The RiGiD project aims to develop a practical methodology for improving the reliability of data analysis pipelines written in R. Starting from the observation that computer science has failed to produce tools usable by working data scientists, the project combines large-scale empirical study of real-world code with the development of lightweight specification techniques — notably gradual typing — automated testing, and reproducibility support. The goal is not formal correctness but a pragmatic reduction in the incidence of errors across all stages of data analysis, from data acquisition and cleaning to statistical modeling and reporting.</p>
+                    <p class="lead">An R&D project funded by the Czech Ministry of Education, Youth, and Sports under the ERC CZ programme (grant LL2325) and conducted at the Faculty of Mathematics and Physics, Charles University.</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="publications.html#publications" class="btn-hero btn-primary">View Publications</a>
+                    <a href="people.html" class="btn-hero btn-secondary">Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Directions Section -->
+    <section class="content-section research-section">
+        <div class="container">
+            <h2 class="section-header">Research Directions</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card data-science">
+                    <h3>Practical Data Science</h3>
+                    <p>Understanding how data scientists work and where things go wrong. Through user studies, interviews, and large-scale analysis of real-world R code, we catalog error patterns across all stages of the data analysis process — from data acquisition and cleaning to modeling and reporting.</p>
+                </div>
+                <div class="highlight-card type-systems">
+                    <h3>Type Systems</h3>
+                    <p>Developing type systems that catch errors in dynamic languages without getting in the way. We explore gradual typing, set-theoretic types, and type inference techniques that accommodate the idioms data scientists actually use — data frames, implicit conversions, and multiple object systems.</p>
+                </div>
+                <div class="highlight-card tools-languages">
+                    <h3>Tools and Languages</h3>
+                    <p>Building the compilers, runtime systems, and development tools that make it all work. This includes JIT compilation for R, automated test generation, reproducibility infrastructure, and data lineage tracking for auditing results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-summary">
+                <div class="about-summary-metrics">
+                    <h3>Project at a Glance</h3>
+                    <ul class="highlight-list">
+                        <li>International research team (CZ, CH, PL, US, FR)</li>
+                        <li>9 peer-reviewed publications in 2025</li>
+                        <li>Open-source software released under Apache 2.0, MIT, GPL-3.0, and public-domain licenses</li>
+                        <li>Selected to host SPLASH 2027</li>
+                    </ul>
+                </div>
+
+                <div class="about-summary-text">
+                    <h3>Collaboration & International Engagement</h3>
+                    <p>The project maintains strong international collaboration across Europe, North America, and Asia. Nearly all publications are the result of cross-institutional research efforts.</p>
+                    <p>We co-organize the <a href="https://pliss.org" target="_blank">International Summer School on Programming Languages (PLISS)</a>, an influential training event for early-career researchers. In 2027, we will host <a href="https://splashcon.org" target="_blank">SPLASH</a>, marking the first time this premier conference will take place in Central Europe.</p>
+                    <p>We also actively host visiting researchers and organize joint research meetings between Charles University and Czech Technical University, strengthening the Czech programming languages research ecosystem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="r-pattern">
+            <div class="pattern-element">R</div>
+            <div class="pattern-element">+</div>
+            <div class="pattern-element">%>%</div>
+            <div class="pattern-element">R</div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="content-section bg-light-beige news-section">
+        <div class="container">
+            <h2 class="section-header">News & Events</h2>
+            
+            <div class="news-row-simple">
+                <div class="news-date-simple">May 2026</div>
+                <div class="news-text-simple"><strong><a href="https://pliss.org/2026/" target="_blank">PLISS 2026 International Summer School</a></strong>: 25–30 May, Bertinoro, Italy. Upcoming edition of the international summer school dedicated to programming languages and software systems, offering in-depth lectures and close interaction with leading researchers in the field.</div>
+            </div>
+
+            <div class="news-row-simple">
+                <div class="news-date-simple">Autumn 2025</div>
+                <div class="news-text-simple"><strong><a href="https://splashcon.org/" target="_blank">SPLASH Conference Organization</a></strong>: Selected to host the ACM SIGPLAN International Conference on Systems, Programming, Languages, and Applications (SPLASH 2027) in Prague. This will be the first time the conference is held in Central Europe.</div>
+            </div>
+
+            <div class="news-row-simple">
+                <div class="news-date-simple">May 2025</div>
+                <div class="news-text-simple"><strong><a href="https://pliss.org/2025/" target="_blank">PLISS 2025 International Summer School</a></strong>: 26–31 May, Bertinoro, Italy. Annual international event providing advanced training in programming languages and implementation. The programme brings together researchers and students for intensive lectures, interactive sessions, and exchange of current research ideas.</div>
+            </div>
+
+            <div class="news-row-simple">
+                <div class="news-date-simple">September 2023</div>
+                <div class="news-text-simple"><strong><a href="https://pliss.org/2023/" target="_blank">PLISS 2023 International Summer School</a></strong>: 3–9 September, Bertinoro, Italy. An international summer school focused on programming language implementation, combining expert lectures, research-oriented discussions, and mentoring for students and early-career researchers. Organized in collaboration with King's College London, Czech Technical University, and Northeastern University.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Join Section -->
+    <section class="content-section join-section">
+        <div class="container">
+            <h2 class="section-header">Join</h2>
+            <div class="join-description">
+                <p class="lead-text">We are constantly looking for smart and enthusiastic people to work with. You can find more details regarding interesting project ideas <a href="">here</a>.</p>
+    
+                <p class="lead-text">Possible openings might be available for Bachelor, Master, and PhD students as well as Post-Doc researchers. If you think you might be interested in joining us, feel free to contact via email at <a href="mailto:lucie.lerch@matfyz.cuni.cz">lucie.lerch@matfyz.cuni.cz</a>.</p>
+                    
+                <p>When you send an email state briefly your past experience, publication track record, past supervisors, as well as attach a your CV.
+
+                Please make sure to include answers for the following questions:
+                        
+                What aspect of research is appealing to you?
+                What is your career goal?</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logos">
+                        <div class="footer-logo msmt">
+                            <a href="">
+                                <img src="images/logo/msmt-logo-no-backgroung.png" alt="MŠMT">
+                            </a>
+                        </div>
+                        <div class="footer-logo charles">
+                            <a href="">
+                                <img src="images/logo/PR-56-version1-uk_uzitna_eng_barevna (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
