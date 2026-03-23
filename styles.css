@@ -32,15 +32,19 @@
 .highlight-card.tools-languages { border-top: 4px solid var(--color-tools-languages); }
 
 /* Basic Setup */
+html {
+    height: 100%;
+    scroll-padding-top: 100px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
-}
-
-html {
-    scroll-padding-top: 100px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navigation */
@@ -65,6 +69,7 @@ html {
 /* Page Layout */
 .page-content {
     margin-top: 80px;
+    flex: 1;
 }
 
 .content-section {
