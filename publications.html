@@ -85,7 +85,29 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="publications/laurent_typed_ir_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="publications/laurent_stt_implem_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_stt')">BibTeX</button>
+                            </div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Implementing Set-Theoretic Types</div>
+                            <div class="publication-authors">M. Laurent, K. Nguyễn</div>
+                            <div class="publication-venue">Under review, 2026</div>
+                            <div id="abstract_laurent_stt" class="publication-abstract">
+                                <p class="abstract-text">Set-theoretic types provide a rich type algebra that supports unrestricted unions, intersections, and negations, together with a decidable type constraint-solving algorithm known as tallying. These types are particularly well suited for typing dynamic languages, where functions often exhibit both generic and overloaded behavior. However, the complexity of their implementation has hindered their widespread adoption. In this paper, we introduce a modular representation for set-theoretic types and revisit the algorithms for subtyping and tallying. We compare our approach with the historical CDuce implementation and evaluate the performance impact of some optimizations and design choices.</p>
+                            </div>
+                            <div id="bibtex_laurent_stt" class="bibtex-content" style="display: none;">
+                                <pre>@misc{laurent_stt_2026,
+    title = {{Implementing Set-Theoretic Types}},
+    author = {Laurent, Mickaël and Nguyễn, Kim},
+    year = {2026},
+    note = {Under review},
+}</pre>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-links">
+                                <a href="publications/laurent_typed_ir_2026.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3811921" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typed_ir')">BibTeX</button>
                             </div>
                             <div class="publication-title"><span class="research-dot type-systems"></span>A Typed Intermediate Representation for Dynamic Languages</div>
@@ -95,12 +117,20 @@
                                 <p class="abstract-text">This paper presents key design decisions for a statically typed, high-level intermediate representation that directly supports optimizations such as specialization, devirtualization, inlining, and copy elimination.</p>
                             </div>
                             <div id="bibtex_laurent_typed_ir" class="bibtex-content" style="display: none;">
-                                <pre>@article{laurent_typed_ir_2026,
-    title = {{A Typed Intermediate Representation for Dynamic Languages}},
-    author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski, Sebastián and Vitek, Jan},
-    year = {2026},
-    journal = {ACM Transactions on Programming Languages and Systems},
-    note = {Under review},
+                                <pre>@article{10.1145/3811921,
+author = {Laurent, Micka\"{e}l and Hain, Jakob and K\v{r}ikava, Filip and Krynski, Sebasti\'{a}n and Vitek, Jan},
+title = {A Typed Intermediate Representation for Dynamic Languages},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {0164-0925},
+url = {https://doi.org/10.1145/3811921},
+doi = {10.1145/3811921},
+abstract = {Dynamic programming languages pose significant challenges for optimizing compilers due to features such as dynamic typing, late binding, reflection, copy-on-write, and delayed evaluation. To generate efficient code, compilers must speculate on which dynamic features will be exercised and produce specialized code based on these assumptions. This paper presents the design of a statically typed, high-level intermediate representation that makes dynamic behaviors explicit and amenable to static analysis. Our IR combines gradual typing with ownership tracking, and explicitly represents promises, multiple function versions, and contextual dispatch. Together, these features directly support optimizations such as specialization, inlining, scope elision, and copy elimination. We formalize a core calculus, called FI\v{R}, that captures the essential features required for these optimizations. We provide an operational semantics, a type system, and flow and reflection analyses, and we prove the soundness of the type system.},
+note = {Just Accepted},
+journal = {ACM Trans. Program. Lang. Syst.},
+month = apr,
+keywords = {JIT, compilation, gradual typing, dynamic language}
 }</pre>
                             </div>
                         </div>
@@ -125,27 +155,6 @@
     booktitle = {{13th International Conference on Fun with Algorithms (FUN 2026)}},
     series = {{LIPIcs}},
     doi = {10.4230/LIPIcs.CVIT.2016.23},
-}</pre>
-                            </div>
-                        </div>
-
-                        <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="publications/laurent_stt_implem_2025.pdf" target="_blank" class="pub-link">PDF</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_stt')">BibTeX</button>
-                            </div>
-                            <div class="publication-title"><span class="research-dot type-systems"></span>Implementing Set-Theoretic Types</div>
-                            <div class="publication-authors">M. Laurent, K. Nguyễn</div>
-                            <div class="publication-venue">Under review, 2026</div>
-                            <div id="abstract_laurent_stt" class="publication-abstract">
-                                <p class="abstract-text">Set-theoretic types provide a rich type algebra that supports unrestricted unions, intersections, and negations, together with a decidable type constraint-solving algorithm known as tallying. These types are particularly well suited for typing dynamic languages, where functions often exhibit both generic and overloaded behavior. However, the complexity of their implementation has hindered their widespread adoption. In this paper, we introduce a modular representation for set-theoretic types and revisit the algorithms for subtyping and tallying. We compare our approach with the historical CDuce implementation and evaluate the performance impact of some optimizations and design choices.</p>
-                            </div>
-                            <div id="bibtex_laurent_stt" class="bibtex-content" style="display: none;">
-                                <pre>@misc{laurent_stt_2026,
-    title = {{Implementing Set-Theoretic Types}},
-    author = {Laurent, Mickaël and Nguyễn, Kim},
-    year = {2026},
-    note = {Under review},
 }</pre>
                             </div>
                         </div>
@@ -206,6 +215,7 @@
                         <div class="publication-item">
                             <div class="publication-links">
                                 <a href="publications/laurent_type_inference_imp_2025.pdf" target="_blank" class="pub-link">PDF</a>
+                                <a href="https://doi.org/10.1145/3798220" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typeinf_imp')">BibTeX</button>
                             </div>
                             <div class="publication-title"><span class="research-dot type-systems"></span>Type Inference for Functional and Imperative Dynamic Languages</div>
@@ -215,12 +225,23 @@
                                 <p class="abstract-text">In this paper, we formalize a type system based on set-theoretic types for dynamic languages that support both functional and imperative programming paradigms. We adapt prior work in the typing of overloaded and generic functions to support an impure &lambda;-calculus, focusing on imperative features commonly found in dynamic languages such as JavaScript, Python, and Julia. We introduce a general notion of parametric opaque data types using set-theoretic types, enabling precise modeling of mutable data structures while promoting modularity, clarity, and readability. Finally, we compare our approach to existing work and evaluate our prototype implementation on a range of examples.</p>
                             </div>
                             <div id="bibtex_laurent_typeinf_imp" class="bibtex-content" style="display: none;">
-                                <pre>@inproceedings{laurent_typeinference_imp_2026,
-    title = {{Type Inference for Functional and Imperative Dynamic Languages}},
-    author = {Laurent, Mickaël and Vitek, Jan},
-    year = {2026},
-    booktitle = {{Proc. ACM Program. Lang. (OOPSLA)}},
-    note = {Accepted},
+                                <pre>@article{10.1145/3798220,
+author = {Laurent, Micka\"{e}l and Vitek, Jan},
+title = {Type Inference for Functional and Imperative Dynamic Languages},
+year = {2026},
+issue_date = {April 2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {10},
+number = {OOPSLA1},
+url = {https://doi.org/10.1145/3798220},
+doi = {10.1145/3798220},
+abstract = {In this paper, we formalize a type system based on set-theoretic types for dynamic languages that support both functional and imperative programming paradigms. We adapt prior work in the typing of overloaded and generic functions to support an impure lambda-calculus, focusing on imperative features commonly found in dynamic languages such as JavaScript, Python, and Julia. We introduce a general notion of parametric opaque data types using set-theoretic types, enabling precise modeling of mutable data structures while promoting modularity, clarity, and readability. Finally, we compare our approach to existing work and evaluate our prototype implementation on a range of examples.},
+journal = {Proc. ACM Program. Lang.},
+month = apr,
+articleno = {112},
+numpages = {26},
+keywords = {dynamic language, functional language, imperative language, polymorphism, semantic subtyping, set-theoretic types, static typing, type inference}
 }</pre>
                             </div>
                         </div>
